@@ -1,0 +1,38 @@
+Core Concepts
+Text Preprocessing
+To compare texts effectively, the input documents are cleaned and normalized. This involves:
+
+Lowercasing
+
+Removing punctuation and stop words
+
+Tokenization (breaking text into words or phrases)
+
+Stemming or Lemmatization (reducing words to root forms)
+
+Similarity Detection Techniques
+Various algorithms are used to quantify similarity between texts:
+
+Cosine Similarity: Treats text as a vector in a multi-dimensional space and measures the cosine of the angle between them.
+
+Jaccard Similarity: Compares the overlap between sets of words or n-grams.
+
+Fingerprinting: Hashes substrings (shingles) of the document and compares the fingerprints.
+
+Levenshtein Distance: Measures the number of edits required to transform one string into another.
+
+N-Gram Analysis
+This method breaks down the text into contiguous sequences of n items (words or characters). Matching n-grams across documents helps detect both exact and partial copying.
+
+Thresholding and Reporting
+Based on the similarity score, the system flags potential plagiarism when the score exceeds a predefined threshold. The results may include:
+
+Percentage similarity
+
+Highlighted matched sections
+
+Source URLs or document matches
+
+External Source Matching (Optional)
+Advanced plagiarism checkers integrate with web search APIs or document databases to scan beyond local text entries.
+
